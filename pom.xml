@@ -5,7 +5,8 @@
   	<version>0.0.1</version>
   	<name>CmsLatte</name>
   	<description>Script language to create content or page</description>
-
+	<packaging>jar</packaging>
+	
  	<properties>
 		<org.slf4j-version>1.5.10</org.slf4j-version>
 		<project.artifactId>cms-latte</project.artifactId>
