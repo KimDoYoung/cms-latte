@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lattetest>
+	<item  title="DoubleQuotoTest">
+		<code><![CDATA[
+		<@
+		//2013-02-03 echo문장의  따옴표안에 따옴표 넣기 
+		echo "abc\"def";
+		echo "\"kdy\"";
+		@>
+		]]></code>
+		<result><![CDATA[abc"def"kdy"]]></result>
+	</item>
+	<item  title="PropertyNameTest">
+		<code><![CDATA[
+		<@
+		s="COMMUNITY_ID";
+		echo s.propertyName();
+		echo "-";
+		s="ETC_02";
+		echo propertyName(s);
+		@>
+		]]></code>
+		<result><![CDATA[communityId-etc02]]></result>
+	</item>	
+	<item  title="Matrix Sorty Test">
+		<code><![CDATA[
+		<@
+			t = {{1,1,1},{2,2,2},{3,3,3}};
+			t2 = t.sortTable(1,"ASC");
+			echo t[0,1];
+			echo t2[0,1];
+		@>
+		]]></code>
+		<result><![CDATA[33]]></result>
+	</item>	
+</lattetest>

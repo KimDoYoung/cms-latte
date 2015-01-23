@@ -1,0 +1,8 @@
+<@
+a=1;
+if a==1 begin goto flag1; end;
+@>
+<@#flag3;@>
+123
+<@#flag1;@>
+ABC

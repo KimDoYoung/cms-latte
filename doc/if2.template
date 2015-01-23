@@ -1,0 +1,12 @@
+1<@
+a = 1;
+b = 2;
+c = 3;
+if a==b begin
+	echo "A";
+end elseif a == c begin
+    echo "B";
+end else begin
+    echo "C";
+end;
+@>2

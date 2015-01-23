@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lattetest>
+	<item  title="hideName">
+		<code><![CDATA[
+		<@
+		name = "KimDoYoung123";
+		echo hideName(name,"X");
+		@>
+		]]></code>
+		<result><![CDATA[XXXXoYoung123]]></result>
+	</item>
+</lattetest>

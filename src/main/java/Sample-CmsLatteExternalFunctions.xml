@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CmsLatte-External-Functions>
+	<in-jar>
+		<jar file="c:/1.jar">
+			<class>kr.co.kalpa.A</class>
+			<class>kr.co.kalpa.B</class>
+			<class>kr.co.kalpa.C</class>
+		</jar>
+		<jar file="c:/2.jar">
+			<class>kr.co.kalpa.A1</class>
+			<class>kr.co.kalpa.B1</class>
+			<class>kr.co.kalpa.C1</class>
+		</jar>
+	</in-jar>
+	<classes>
+		<class>kr.co.dcos.A</class>
+		<class>kr.co.dcos.B</class>
+		<class>kr.co.dcos.C</class>
+	</classes>
+</CmsLatte-External-Functions>

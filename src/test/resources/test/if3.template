@@ -1,0 +1,18 @@
+1<@
+a = 1;
+b = 2;
+c = 1;
+if a==b begin
+	echo "A";
+end elseif a == c begin
+	k = 1;
+	m = 2;
+    if k == m begin
+		echo "K";
+	end else begin
+		echo "M";
+	end;
+end else begin
+    echo "C";
+end;
+@>2
