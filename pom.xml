@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
   	<groupId>kr.co.kalpa.cms</groupId>
   	<artifactId>cms-latte</artifactId>
-  	<version>0.0.1</version>
+  	<version>1.0.0</version>
   	<name>CmsLatte</name>
   	<description>Script language to create content or page</description>
 	<packaging>jar</packaging>
@@ -11,7 +11,7 @@
 		<org.slf4j-version>1.5.10</org.slf4j-version>
 		<project.artifactId>cms-latte</project.artifactId>
 		<project.groupId>kr.co.kalpa.cms</project.groupId>
-		<project.version>0.0.1-SNAPSHOT</project.version>
+		<project.version>1.0.0-SNAPSHOT</project.version>
 	</properties>
 	
    	<dependencies>
