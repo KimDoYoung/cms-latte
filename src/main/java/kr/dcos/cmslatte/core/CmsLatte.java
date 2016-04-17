@@ -98,6 +98,14 @@ public class CmsLatte {
 	public String createPage( ) throws CmsLatteException{
 		return createPage(null);
 	}
+	
+	public String run() throws CmsLatteException {
+		return this.createPage();
+	}
+	public String run(String template) throws CmsLatteException{
+		return this.createPage(template);
+	}
+	
 	public FieldChangGo getFieldChangGo() {
 		return fieldChangGo;
 	}
