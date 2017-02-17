@@ -1,18 +1,11 @@
 package kr.dcos.cmslatte.core;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-
-import kr.dcos.cmslatte.core.CmsLatte;
-import kr.dcos.cmslatte.exception.CmsLatteException;
-import kr.dcos.cmslatte.utils.TestItem;
-import kr.dcos.cmslatte.utils.TestWithXml;
 
 import org.junit.After;
 import org.junit.Before;
@@ -20,12 +13,21 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import kr.dcos.cmslatte.exception.CmsLatteException;
+import kr.dcos.cmslatte.utils.TestItem;
+import kr.dcos.cmslatte.utils.TestWithXml;
+
 public class CmsLatteTest extends TestBase{
 	
 	private static Logger logger = LoggerFactory.getLogger(CmsLatteTest.class);
 
 	@Before
 	public void setUp() throws Exception {
+		String folder = "/home/kdy987/tmp";
+		File file = new File(folder);
+		if(file.exists() == false){
+			file.mkdirs();
+		}
 	}
 
 	@After
@@ -357,7 +359,7 @@ public class CmsLatteTest extends TestBase{
 	}
 	@Test
 	public void testSaveToFile() throws CmsLatteException, IOException {
-		String s = "1<@ fn=\"c:/1.txt\"; save output to file fn with \"utf-8\" override false  ;@>2";
+		String s = "1<@ fn=\"/home/kdy987/tmp/1.txt\"; save output to file fn with \"utf-8\" override false  ;@>2";
 		logger.debug(s);
 		CmsLatte cmsLatte = new CmsLatte();
 		logger.debug(cmsLatte.toString());
